@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey2"
+    tools:context=".setting">
+
+    <RelativeLayout
+        android:id="@+id/userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/testUserAvatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/userimagetest"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/tv_testUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/testUser"
+            android:layout_marginTop="40dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/testAccount"
+            android:layout_below="@+id/tv_testUser"
+            android:layout_marginLeft="159dp"
+            android:textSize="20sp"
+            android:textColor="@color/grey1"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:background="@drawable/next"
+            android:layout_marginLeft="325dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        >
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@android:color/white"
+            android:layout_weight="2"/>
+
+        <ImageButton
+            android:id="@+id/bt_home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/home"
+            android:layout_weight="1"
+
+            />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@android:color/white"
+            android:layout_weight="1.5"/>
+
+        <ImageButton
+            android:id="@+id/bt_graph"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/graph"
+            android:layout_weight="1"
+            />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@android:color/white"
+            android:layout_weight="1.5"/>
+
+        <ImageButton
+            android:id="@+id/bt_list"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/list"
+            android:layout_weight="1"
+            />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@android:color/white"
+            android:layout_weight="1.5"/>
+
+        <ImageButton
+            android:id="@+id/bt_setting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/setting"
+            android:layout_weight="1"
+            />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@android:color/white"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_hotelInfo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/userInfo"
+        android:background="@android:color/white"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/hotelInfo"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="28dp"
+            android:layout_toRightOf="@id/img_hotel"/>
+
+        <ImageView
+            android:id="@+id/img_hotel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/hotel1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:scaleType="fitXY"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_roomManagement"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/rl_hotelInfo"
+        android:background="@android:color/white"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/roomManagement"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="28dp"
+            android:layout_toRightOf="@id/img_room"/>
+
+        <ImageView
+            android:id="@+id/img_room"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/room"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:scaleType="fitXY"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_membership"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/rl_roomManagement"
+        android:background="@android:color/white"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/membershipManagement"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="28dp"
+            android:layout_toRightOf="@id/img_membership"/>
+
+        <ImageView
+            android:id="@+id/img_membership"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/membership"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:scaleType="fitXY"
+            />
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@android:color/white"
+        android:layout_below="@id/rl_membership"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/setting"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="28dp"
+            android:layout_toRightOf="@id/img_setting"/>
+
+        <ImageView
+            android:id="@+id/img_setting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/setting1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:scaleType="fitXY"
+            />
+    </RelativeLayout>
+</RelativeLayout>
